@@ -9,5 +9,10 @@ public class MicroservicoBooksApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MicroservicoBooksApplication.class, args);
 	}
+	public MicroservicoBooksApplication() {
+		super();
+	}
 
+
+	
 }

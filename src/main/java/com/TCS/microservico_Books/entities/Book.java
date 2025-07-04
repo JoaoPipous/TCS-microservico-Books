@@ -17,23 +17,27 @@ public class Book implements Serializable {
     private String titulo;
     private String autor;
     private int ano;
+    private String genero;
 
     public Book() {
 
     }
 
-    public Book(long id, String titulo, String autor, int ano) {
+    public Book(long id, String titulo, String autor, int ano, String genero) {
         super();
         this.id = id;
         this.titulo = titulo;
         this.autor = autor;
         this.ano = ano;
+        this.genero = genero;
     }
 
-    public Book(String titulo, String autor, int ano) {
+    public Book(String titulo, String autor, int ano,  String genero) {
         this.titulo = titulo;
         this.autor = autor;
         this.ano = ano;
+        this.genero = genero;
+
     }
 
     public long getId() {
@@ -66,5 +70,13 @@ public class Book implements Serializable {
 
     public void setAno(int ano) {
         this.ano = ano;
+    }
+
+    public void getGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
     }
 }
